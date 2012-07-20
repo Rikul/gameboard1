@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="match_parent"  
+    android:id="@+id/myview" android:background="@drawable/boardbg1"
+    android:gravity="center_vertical|center_horizontal"> 
+           
+  
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:orientation="horizontal"
+    android:layout_height="wrap_content" android:layout_weight="2" android:background="@drawable/headerimg1"    
+    android:gravity="center_vertical|center_horizontal">
+    
+	    <ImageButton xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:background="@android:color/transparent"    		
+	        android:layout_height="wrap_content" android:src="@drawable/onebit_29" android:contentDescription="previous"
+	        android:onClick="prevClick" android:id="@+id/leftPuzzle" android:layout_weight="1" android:layout_gravity="center"/>"
+	    
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="wrap_content" android:orientation="vertical"
+    		android:layout_height="match_parent"    
+    		android:gravity="center_vertical|center_horizontal" android:layout_weight="1">
+    		
+	    <TextView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"     		
+	        android:layout_height="wrap_content" android:id="@+id/leveltext"  android:textSize="32dp" 
+	        android:textColor="@android:color/white" android:text="LEVEL "/>
+	    <TextView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"     		
+	        android:layout_height="wrap_content" android:id="@+id/gridtext"  android:textSize="28dp" 
+	        android:textColor="@android:color/white" android:text="5 X 5"/>
+	    
+	    </LinearLayout>
+	    	    	        	    
+	    <ImageButton xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"  android:background="@android:color/transparent"     		
+	        android:layout_height="wrap_content" android:src="@drawable/onebit_27" android:contentDescription="next"
+	        android:onClick="nextClick" android:id="@+id/rightPuzzle" android:layout_weight="1" android:layout_gravity="center"/> 	
+	            
+	</LinearLayout>  
+        
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:layout_height="match_parent" android:layout_weight="7" android:gravity="center_vertical|center_horizontal">
+    <com.rikulpatel.gameboard1.mySurface xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"  android:layout_height="wrap_content"  
+    	android:id="@+id/mysurface" />
+    </LinearLayout>
+        
+</LinearLayout>
